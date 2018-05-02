@@ -29,8 +29,9 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
-  gem 'web-console', '~> 2.0'
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
-  gem 'capybara', '~>2.18'
+end
+group :development do
+  gem 'web-console', '~> 2.0'
 end
