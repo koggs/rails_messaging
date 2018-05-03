@@ -1,3 +1,12 @@
 Given("I visit the site") do
   visit root_path
 end
+
+When("I click {string}") do |link|
+  click_link_or_button link
+end
+
+When("I fill in {string} with {string}") do |field, content|
+  fill_in field, with: content
+end
+
